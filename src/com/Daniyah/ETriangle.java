@@ -10,7 +10,7 @@ public class ETriangle extends Shape {
 
     @Override
     public double getArea () {
-        return this.side * this.side / 2;
+        return Math.sqrt(3) / 4 * Math.pow(this.side, 2);
     }
 
     @Override
