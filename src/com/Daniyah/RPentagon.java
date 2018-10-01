@@ -10,12 +10,12 @@ public class RPentagon extends Shape {
 
     @Override
     public double getArea () {
-        return 0.25 * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * (side * side);
+        return 0.25 * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * (this.side * this.side);
     }
 
     @Override
     public double getPerimeter () {
-        return side * 5;
+        return this.side * 5;
     }
 
 }
