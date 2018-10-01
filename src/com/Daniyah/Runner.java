@@ -2,7 +2,7 @@ package com.Daniyah;
 
 public class Runner {
     public static void main (String[] args) {
-        //Shape shape1 = new Rectangle(10, 5);
+        Shape shape1 = new Rectangle(10, 5);
         //Shape shape2 = new ETriangle(5);
         Shape shape3 = new makeACircle(10);
 
@@ -12,7 +12,7 @@ public class Runner {
         System.out.println("My Area is: " + shape4.getArea());
 
         //Shape[] shapes = { shape1, shape2, shape3 };
-        Shape[] shapes = { shape3 };
+        Shape[] shapes = { shape1, shape3 };
 
         for (Shape cur : shapes) {
             System.out.println(cur);
