@@ -1,14 +1,29 @@
 package com.Daniyah;
 
 /**
- * this class is the rectangle creator
+ * Represents a shape called a rectangle.
+ *
+ * @author Rachel
  */
 public class Rectangle extends Shape {
-    /* the fields are the integers height and width*/
+    /**
+     * The height of the rectangle.
+     */
     private int height;
+
+    /**
+     * The width of the rectangle.
+     */
     private int width;
 
     /* the constructor is public Rectangle and it initializes the rectangle's height and width*/
+
+    /**
+     * Creates a rectangle with dimensions height and width.
+     *
+     * @param height the height of the rectangle
+     * @param width the width of the rectangle
+     */
     public Rectangle(int height, int width)
     {
         super("Rectangle");
@@ -17,16 +32,21 @@ public class Rectangle extends Shape {
     }
 
     /**
-     * the methods find the area and perimeter of the rectangle with the given height and width
-     * @return the methods return the rectangle's area and perimeter
+     * Calculates the area of the rectangle.
+     *
+     * @return the area
      */
-
     @Override
     public double getArea()
     {
         return this.height * this.width;
     }
 
+    /**
+     * Calculates the perimeter of the rectangle.
+     *
+     * @return the perimeter
+     */
     @Override
     public double getPerimeter()
     {

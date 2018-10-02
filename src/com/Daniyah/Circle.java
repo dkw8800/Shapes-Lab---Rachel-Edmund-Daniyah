@@ -1,15 +1,22 @@
 package com.Daniyah;
 
 /**
- * The class is a circle creator
+ * Represents a shape called a circle.
+ *
+ * @author Daniyah
  */
 public class Circle extends Shape {
-
-
- /* the field is naming the integer radius, which is used to calculate its area and perimeter*/
+    /**
+     * The radius of the circle.
+     */
     private int radius;
 
-    /* the constructor is public Circle and it initializes the circle's radius and type*/
+    /**
+     * Creates a circle with the specified radius.
+     *
+     * @param radius the radius of the circle
+     * @see          Circle
+     */
     public Circle(int radius)
     {
         super("Circle");
@@ -17,8 +24,9 @@ public class Circle extends Shape {
     }
 
     /**
-     * the methods find the area and perimeter of the circle with the given radius
-     * @return the methods return the circle's area and perimeter
+     * Calculates the area of the circle.
+     *
+     * @return the area of the circle
      */
     @Override
     public double getArea()
@@ -26,6 +34,11 @@ public class Circle extends Shape {
         return Math.PI * Math.pow(this.radius, 2);
     }
 
+    /**
+     * Calculates the "perimeter" or circumference of the circle.
+     *
+     * @return the circumference of the circle
+     */
     @Override
     public double getPerimeter()
     {
